@@ -4,7 +4,7 @@ Welcome to **o9-ent** — a GitHub organization that serves as the enterprise-le
 
 ## What is o9-ent?
 
-**o9-ent** is an organizational structure that maps the o9 GitHub Enterprise onto itself as a GitHub organization. It operates one level below the global scope (o9-glo), providing a focused view of the o9 enterprise structure.
+**o9-ent** is an organizational structure that maps the organizations within the o9 GitHub Enterprise as repositories within this GitHub organization. It operates one level below the global scope (o9-glo), providing a focused view of the o9 enterprise structure.
 
 ## The Microcosm Mapping Pattern
 
@@ -86,7 +86,7 @@ This structure provides several benefits:
 - o9-ent appears as a folder within the o9 repository in o9-glo
 - o9-glo appears as a repository within o9-ent (since o9-glo is an organization in the o9 enterprise)
 
-This creates an interesting relationship where both organizations reference each other at different hierarchical levels.
+This creates an interesting relationship where both organizations reference each other at different hierarchical levels. Practically, this means you can navigate from the global view (o9-glo) down to the enterprise level (o9-ent), or start at the enterprise level and see where it fits in the global scope.
 
 ## Exploring the Microcosm
 
@@ -100,5 +100,4 @@ For the global view, visit [o9-glo](https://github.com/o9-glo) to see how o9-ent
 
 ---
 
-*Part of the o9 enterprise microcosm representation*  
-*Microcosm mappings are auto-generated and regularly updated*
+*Part of the o9 enterprise microcosm representation*

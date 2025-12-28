@@ -54,7 +54,7 @@ o9-ent/e9-o9 (repository representing e9-o9 organization)
 **o9-ent** maps the organizations within the o9 GitHub Enterprise, including:
 
 - **e9-o9**: Core o9 engineering organization
-- **o9-glo**: Global scope organization (self-referential)
+- **o9-glo**: Global scope organization (which also contains o9-ent in its mapping)
 - **o9nn**: Neural network and AI organization
 - And other o9 enterprise organizations
 
@@ -83,10 +83,12 @@ This structure provides several benefits:
 
 - **o9-glo** operates at the global scope, mapping multiple enterprises
 - **o9-ent** operates at the enterprise level, mapping organizations within the o9 enterprise
-- o9-ent appears as a folder within the o9 repository in o9-glo
-- o9-glo appears as a repository within o9-ent (since o9-glo is an organization in the o9 enterprise)
 
-This creates an interesting relationship where both organizations reference each other at different hierarchical levels. Practically, this means you can navigate from the global view (o9-glo) down to the enterprise level (o9-ent), or start at the enterprise level and see where it fits in the global scope.
+The relationship between them:
+- In o9-glo: o9-ent appears as a folder within the o9 enterprise repository
+- In o9-ent: o9-glo appears as a repository (because o9-glo is one of the organizations in the o9 enterprise)
+
+This bi-directional reference enables navigation in both directions: you can explore from the global view down to the enterprise level, or start at the enterprise level and see where it fits in the global scope.
 
 ## Exploring the Microcosm
 
